@@ -1,0 +1,75 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.block {
+    transition: background-position 0.3s ease; /* 부드러운 움직임 */
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+/* 페이지 1: 배경색과 블록 색상 */
+.page1 {
+    background-color: #A2A2A2; /* 배경색 */
+}
+
+.page1 .block {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #00FF37 50%, rgba(217, 217, 217, 0) 100%);
+}
+
+/* 페이지 2: 배경색과 블록 색상 */
+.page2 {
+    background-color: #551E7C; /* 배경색 */
+}
+
+.page2 .block {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #C8CF97 50%, rgba(217, 217, 217, 0) 100%);
+}
+
+/* 페이지 3: 배경색과 블록 색상 */
+.page3 {
+    background-color: #FF92D9; /* 배경색 */
+}
+
+.page3 .block {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #0008A6 50%, rgba(217, 217, 217, 0) 100%);
+}
+
+/* 공통 반응형 디자인 */
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+    overflow: hidden;
+}
+
+
+/* 반응형 */
+@media (max-width: 600px) {
+    .grid-container {
+        gap: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        gap: 0;
+    }
+   
+}
