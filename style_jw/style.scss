@@ -63,13 +63,13 @@ body {
 /* 반응형 */
 @media (max-width: 600px) {
     .grid-container {
-        gap: 0;
+        gap: 10px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .grid-container {
-        gap: 0;
+        gap: 10px;
     }
    
 }
